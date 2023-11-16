@@ -29,13 +29,19 @@
             <button type="submit" class="search__button"><i class="bi bi-search"></i></button>
           </form>
         </div>
-        <div class="login__container flex">
+        <div class="login__container relative flex">
           <i class="bi bi-person-circle i__person"></i>
           <span class="login__text">
             Olá, faça seu login<br>ou cadastre-se
             <i class="bi bi-chevron-down"></i>
           </span>
+          <div class="tootip__login__container">
+              <p> Acesse sua conta.</p>
+              <a href="" class="btn rounded btn__hover__opacity mb__10 btn__solid__blue">Entrar</a>
+              <a href="" class="btn rounded btn__hover__opacity btn__line__blue">Cadastre-se</a>
+          </div>
         </div>
+        <div class="overlay"></div>
         <div class="favorits_container">
           <i class="bi bi-heart"></i>
         </div>

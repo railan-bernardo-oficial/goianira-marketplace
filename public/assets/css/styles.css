@@ -60,6 +60,64 @@
   line-height: 1.0;
 }
 
+.tootip__login__container{
+  background: #fff;
+  border-radius: 1rem;
+  width: 100%;
+  padding: 1rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+  transform: translateY(40px);
+  visibility: hidden;
+  opacity: 0;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+}
+
+.tootip__login__container::before{
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  z-index: -2;
+
+}
+
+.login__container:hover{
+  z-index: 999;
+}
+
+.login__container:hover  .tootip__login__container{
+  transform: translateY(20px);
+  visibility: visible;
+  opacity: 1;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+}
+
+.login__container:hover ~ .overlay{
+   visibility: visible;
+   opacity: 1;
+   transition: all .3s ease;
+   -webkit-transition: all .3s ease;
+   -moz-transition: all .3s ease;
+}
+
+.tootip__login__container p{
+  color: var(--color-darck-100);
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
 .favorits_container{
   display: flex;
   justify-content: flex-end;
