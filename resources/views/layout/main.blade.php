@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="{{ asset('vendor/twbs/bootstrap-icons/font/bootstrap-icons.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/css/boot.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/css/styles.css') }}">
+  @stack('styles')
 </head>
 
 <body>
